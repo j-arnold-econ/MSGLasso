@@ -27,13 +27,13 @@ function(X.m, Y.m, grp.WTs, Pen.L, Pen.G, PQ.grps, GR.grps, grp_Norm0, lam1, lam
    grpWTs=as.vector(grp.WTs)
   }
 
-  if(!is.null(ncol(Pen_L))){
-   Pen_L =as.vector(t(Pen.L))} else{
-   Pen_L =as.vector(Pen.L)
+  if(!is.null(ncol(Pen.L))){
+   Pen.L =as.vector(t(Pen.L))} else{
+   Pen.L =as.vector(Pen.L)
   }
-  if(!is.null(ncol(Pen_G))){
-   Pen_G =as.vector(t(Pen.G))} else{
-   Pen_G =as.vector(Pen.G)   
+  if(!is.null(ncol(Pen.G))){
+   Pen.G =as.vector(t(Pen.G))} else{
+   Pen.G =as.vector(Pen.G)   
   }
 
   gmax=ncol(PQ.grps)
@@ -80,8 +80,8 @@ function(X.m, Y.m, grp.WTs, Pen.L, Pen.G, PQ.grps, GR.grps, grp_Norm0, lam1, lam
 
 	  as.double(grpWTs),
 
-	  as.integer(Pen_L),
-	  as.integer(Pen_G),
+	  as.integer(Pen.L),
+	  as.integer(Pen.G),
 
 	  as.integer(gmax),
 	  as.integer(PQgrps),
@@ -111,8 +111,8 @@ function(X.m, Y.m, grp.WTs, Pen.L, Pen.G, PQ.grps, GR.grps, grp_Norm0, lam1, lam
 
 	  as.double(grpWTs),
 
-	  as.integer(Pen_L),
-	  as.integer(Pen_G),
+	  as.integer(Pen.L),
+	  as.integer(Pen.G),
 
 	  as.integer(gmax),
 	  as.integer(PQgrps),
